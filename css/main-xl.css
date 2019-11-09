@@ -284,6 +284,20 @@ hr {
 	margin-bottom: 0;
 }
 
+.col-xl-3 {
+	position: relative;
+}
+
+.col-xl-3 .content {
+	height: 500px;
+    overflow: hidden;
+}
+
+
+.col-xl-3 img {
+	position: absolute;
+}
+
 
 .row .content {
 	position: relative;
@@ -517,10 +531,10 @@ hr {
 }
 
 
-.social-icon {
+.footer-top .container .social-icon {
 	margin-left: 10px;
 	padding: 0;
-	border-radius: 45px;
+	border-radius: 999em;
 	border: none;
     background-color: #f8f9fa;
     width: 46px;
@@ -532,7 +546,7 @@ hr {
 .social-icon:hover {
 	margin-left: 10px;
 	padding: 0;
-	border-radius: 45px;
+	border-radius: 999em;
 	border: none;
     background-color: #007bff;
     width: 46px;

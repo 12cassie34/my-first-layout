@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	width: 100%;
+	width: auto;
 	margin-right: auto;
     margin-left: auto;
 	padding-right: 15px;
@@ -17,7 +17,7 @@ body {
 }
 
 .w-container {
-	width: 100%;
+	width: auto;
 	padding: auto 82px;
 }
 
@@ -173,7 +173,8 @@ hr {
 /* header */
 .nav-bar {
 	display: block;
-    padding: 23px 47px;
+    padding: 23px 0;
+    width: 320px;
 	background-color: white;
 }
 
@@ -203,7 +204,7 @@ hr {
 	padding: 7px;
 	position: absolute;
 	text-align: center;
-	right: 50px;
+	right: 5px;
     background-color: #f8f9fa;
     border-radius: 90px;
     width: 40px;
@@ -304,7 +305,7 @@ hr {
 
 
 .features {
-	padding: 120px 82px;
+	padding: 120px 50px;
 	background-color: #f4f6fa;
 }
 
@@ -320,6 +321,20 @@ hr {
 
 .features .col-sm-12 {
 	margin-bottom: 30px;
+}
+
+.col-xl-3 {
+	position: relative;
+}
+
+.col-xl-3 .content {
+	height: 500px;
+    overflow: hidden;
+}
+
+
+.col-xl-3 img {
+	position: absolute;
 }
 
 
@@ -415,7 +430,7 @@ hr {
 
 .price1 {
 	position: absolute;
-	padding: 12px 30px;
+	padding: 12px 10px;
 	background-color: #007bff;
     border-radius: 45px;
     left: 7px;
@@ -436,8 +451,11 @@ hr {
 
 .price2 {
 	position: absolute;
-    left: 209px;
-    bottom: 5px;
+    padding: 12px 10px;
+    border-radius: 45px;
+    left: 160px;
+    bottom: 0px;
+    height: 48px;
 }
 
 .price2 a {
@@ -564,10 +582,10 @@ hr {
 }
 
 
-.social-icon {
+.footer-top .container .social-icon {
 	margin-left: 10px;
 	padding: 0;
-	border-radius: 45px;
+	border-radius: 999em;
 	border: none;
     background-color: #f8f9fa;
     width: 46px;
@@ -579,7 +597,7 @@ hr {
 .social-icon:hover {
 	margin-left: 10px;
 	padding: 0;
-	border-radius: 45px;
+	border-radius: 999em;
 	border: none;
     background-color: #007bff;
     width: 46px;
