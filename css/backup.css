@@ -168,7 +168,7 @@ hr {
 /* header */
 .nav-bar {
 	display: block;
-    padding: 23px 47px;
+    padding: 15px;
 	background-color: white;
 }
 
@@ -188,6 +188,9 @@ hr {
 	display: none;
 }
 
+#hamburger {
+	display: none;
+}
 
 .buttons {
 	margin-left: 45px;
@@ -218,7 +221,6 @@ hr {
 .functions {
 	width: 100%;
 	margin-bottom: 120px;
-	margin-left: 0;
 	padding: 120px auto;
 }
 
@@ -297,7 +299,6 @@ hr {
 .col-xl-3 img {
 	position: absolute;
 }
-
 
 .row .content {
 	position: relative;
@@ -488,14 +489,11 @@ hr {
 }
 
 .use-it {
-	display: block;
 	margin-bottom: 120px;
 	padding-top: 250px;
 	padding-bottom: 250px;
-	background-color: #00aff0;
-    background-size: cover;
+	background-image: -webkit-linear-gradient(40deg, #1786d8 0%, #00aff0 100%);
 }
-
 
 .use-it h1 {
 	margin-bottom: 15px;
@@ -561,7 +559,7 @@ hr {
 }
 
 
-.list-group-horizontal .first-social-media {
+.footer-top .container .list-group-horizontal .first-social-media {
 	margin-left: 0;
 }
 

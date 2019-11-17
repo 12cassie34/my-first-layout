@@ -2,6 +2,7 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .container {
@@ -14,7 +15,6 @@
 
 .w-container {
 	width: auto;
-	padding: auto 82px;
 }
 
 .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,  {
@@ -50,7 +50,6 @@ h2 {
 	font-size: 30px;
 	font-weight: 700;
 	color: #3f4451;
-    padding-right: 50px;
     margin: 8px 0px 30px;
 }
 
@@ -64,6 +63,7 @@ h4 {
 	color: #3f4451;
 	font-weight: 600;
 	font-size: 18px;
+	height: 23px; 
 }
 
 p {
@@ -101,7 +101,7 @@ hr {
 }
 
 .button2 {
-	padding: 13px 32px;
+	padding: 8px 32px;
     border: 1px solid transparent;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -114,8 +114,9 @@ hr {
 }
 
 .button3 {
-	padding: 13px 32px;
+	padding: 8px 32px;
     border: 1px solid transparent;
+    width: 145px;
     border-radius: 45px;
     background-color: #f8f9fa;
     text-transform: capitalize;
@@ -130,14 +131,10 @@ hr {
 }
 
 .button4 {
-    padding: 13px 32px;
-    border: 1px solid transparent;
+	margin: 0 auto;
     border-radius: 45px;
     background-color: white;
-    text-transform: capitalize;
-    text-decoration: none;
-	font-size: 15px;
-    font-weight: 500;
+    width: 145px;
 }
 
 .button4:hover {
@@ -168,12 +165,14 @@ hr {
 /* header */
 .nav-bar {
 	display: block;
-    padding: 23px 47px;
+    padding: 15px;
+    overflow: hidden;
 	background-color: white;
 }
 
 .logo {
 	padding-top: 15px;
+	float: left;
 }
 
 .nav {
@@ -184,12 +183,26 @@ hr {
 }
 
 
-.nav label {
+.nav ul {
 	display: none;
 }
 
-#hamburger {
-	display: none;
+.nav ul li {
+	display: block;
+}
+
+.nav label {
+	display: inline-block;
+	margin-top: 5px;
+	padding: 7px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+    background-color: #f8f9fa;
+    border-radius: 90px;
+    width: 40px;
+    height: 40px;
+    color: #007bff;
 }
 
 .buttons {
@@ -202,7 +215,7 @@ hr {
 
 .best-way {
 	margin: 0 auto;
-	padding-top: 250px;
+	padding-top: 130px;
 }
 
 .first-p {
@@ -211,21 +224,25 @@ hr {
     color: #fff;
 }
 
+.best-way-desc {
+	margin-bottom: 45px;
+}
+
 
 /*main-content*/
 
 #main-content {
-	padding-top: 120px;
+	padding-top: 50px;
 }
 
 .functions {
 	width: 100%;
-	margin-bottom: 120px;
-	padding: 120px auto;
+	padding: 60px 20px;
 }
 
 .icon-bg-chat {
 	margin-bottom: 20px;
+	margin-top: 10px;
 	background-color: #6f42c1;
 	height: 60px;
 	width: 60px;
@@ -240,6 +257,7 @@ hr {
 }
 
 .icon-bg-paper-plane {
+	margin-top: 10px;
 	margin-bottom: 20px;
 	background-color: #ffc107;
 	height: 60px;
@@ -254,26 +272,29 @@ hr {
     font-size: 18px;
 }
 
-.function1 {
-	margin-bottom: 130px;
-}
 
 .function1 .row .col-lg-7 {
-	right: 50px;
+	right: 8px;
+}
+
+.function2 {
+	display: flex;
+}
+
+.function2 .picture {
+	order: -1;
 }
 
 .function2 .row .col-lg-7 img {
-	float: right;
+	padding-left: 0;
 }
 
 .desc {
 	margin-bottom: 86px;
 }
 
-
-
 .features {
-	padding: 120px 82px;
+	padding: 60px 5px;
 	background-color: #f4f6fa;
 }
 
@@ -284,6 +305,14 @@ hr {
 
 .features .desc p {
 	margin-bottom: 0;
+}
+
+.features .col-12 {
+	margin-bottom: 30px;
+}
+
+.features h3 {
+	height: 110px;
 }
 
 .col-xl-3 {
@@ -370,7 +399,7 @@ hr {
 
 .price-table {
 	position: relative;
-	padding: 120px 0;
+	padding: 60px 0;
 	background-color: #fbfbfd;
 }
 
@@ -378,7 +407,7 @@ hr {
 	margin-bottom: 70px;
 }
 
-.prcie-swich {
+.price-swich {
 	position: relative;
 	margin-bottom: 60px;
 	margin-right: auto;
@@ -386,18 +415,31 @@ hr {
 	padding: 7px;
 	background-color: #fff;
 	border-radius: 45px;
-	width: 386px;
+	width: 300px;
 	height: 48px;
 }
 
 .price1 {
 	position: absolute;
-	padding: 12px 30px;
+	padding: 4px 10px;
 	background-color: #007bff;
     border-radius: 45px;
     left: 7px;
     bottom: 0px;
-    height: 48px;
+}
+
+.price2 {
+	position: absolute;
+    left: 160px;
+    bottom: 5px;
+}
+
+.price2 a {
+	padding-bottom: 6px;
+}
+
+.price-table .desc {
+	margin-bottom: 30px;
 }
 
 .price1 a, .price2 a {
@@ -411,47 +453,38 @@ hr {
 	color: #fff;
 }
 
-.price2 {
-	position: absolute;
-    left: 209px;
-    bottom: 5px;
-}
-
-.price2 a {
-	padding-bottom: 5px;
-}
-
-.price-table .desc {
-	margin-bottom: 60px;
-}
-
 .prices {
-	margin: 0 82px;
+	margin: 0 15px;
 }
 
 .with-tag {
 	position: relative;
 }
 
+.prices .tag-popular {
+	position: absolute;
+	transform: rotate(-45deg);
+	height: 22px;
+    top: 15px;
+    left: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
 .prices .tag {
-	position: relative;
-	bottom: 50px;
-    right: 50px;
+	position: absolute;
 	width: 0;
     height: 0;
     border-style: solid;
     border-width: 80px 80px 0 0;
     border-color: #00b0f0 transparent transparent transparent;
+    top: 1px;
+    left: 10px;
 }
 
-.prices .tag .tag-popular {
-	position: absolute;
-	transform: rotate(-45deg);
-	bottom: 42px;
-    left: 4px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #fff;
+.prices .col-12 {
+	margin-bottom: 30px;
 }
 
 
@@ -467,6 +500,7 @@ hr {
 .price-item h3 {
 	margin-top: 30px;
 	margin-bottom: 8px;
+	height: 40px;
 }
 
 .price {
@@ -489,9 +523,9 @@ hr {
 }
 
 .use-it {
-	margin-bottom: 120px;
-	padding-top: 250px;
-	padding-bottom: 250px;
+	margin-bottom: 60px;
+	padding-top: 125px;
+	padding-bottom: 125px;
 	background-image: -webkit-linear-gradient(40deg, #1786d8 0%, #00aff0 100%);
 }
 
@@ -506,9 +540,13 @@ hr {
 }
 
 .footer-top {
-	margin-right: 82px;
-	margin-left: 82px;
+	margin-right: 40px;
+	margin-left: 40px;
 	margin-bottom: 70px;
+}
+
+.footer-top .col-12{
+	margin-bottom: 30px;
 }
 
 .footer-top p {
@@ -592,14 +630,20 @@ hr {
 	padding-right: 0;
 }
 
+
 .terms, .terms a {
 	color: #7f88a6;
 	text-transform: capitalize;
 	font-size: 14px;
 	font-weight: 300;
+	float: left;
 }
 
 .terms .term:after {
     content: "|";
     padding: 16px;
+}
+
+.term {
+	height: 40px;
 }
