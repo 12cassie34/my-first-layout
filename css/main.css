@@ -143,6 +143,7 @@ hr {
 }
 
 .button5 {
+	margin: 0 auto;
 	padding: 13px 32px;
     border: 1px solid transparent;
     border-radius: 45px;
@@ -152,6 +153,7 @@ hr {
 	font-size: 15px;
     font-weight: 500;
     color: #007bff;
+    width: 145px;
 }
 
 #header {
@@ -164,7 +166,7 @@ hr {
 
 /* header */
 .nav-bar {
-	display: block;
+	display: flex;
     padding: 15px;
     overflow: hidden;
 	background-color: white;
@@ -172,7 +174,6 @@ hr {
 
 .logo {
 	padding-top: 15px;
-	float: left;
 }
 
 .nav {
@@ -457,7 +458,7 @@ hr {
 	margin: 0 15px;
 }
 
-.with-tag {
+.price-item {
 	position: relative;
 }
 

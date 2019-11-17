@@ -32,13 +32,13 @@
 }
 
 @media (max-width: 991px) and (min-width: 721px) {
-.nav-bar {
-	padding: 15px 105px;
+.nav label {
+	right: 15%;
 }
 
-.nav label {
-	margin-right: 80px;
-	right: 25px;
+.logo {
+	position: relative;
+	left: 14%;
 }
 
 .features .col-12 {
@@ -112,20 +112,27 @@
 
 @media (max-width: 1440px) and (min-width: 1200px) {
 .nav-bar {
+	padding-right: 30px;
+	padding-left: 30px;
 	display: flex;
-	justify-content: center;
 }
 
 .nav {
 	padding-top: 3px;
 	padding-right: 0;
+	flex-grow: 1;
     text-transform: capitalize;
     font-weight: 500;
-    justify-content: center;
 }
 
 .nav ul {
+	padding-left: 0;
 	display: flex;
+	flex-grow: 1;
+}
+
+.nav .nav-item {
+	justify-content: center;
 }
 
 .nav label {
@@ -140,15 +147,31 @@
 	float: left;
 }
 
+.nav .for-nav {
+	justify-content: flex-end;
+}
+
+.nav .for-member {
+	justify-content: flex-end;
+}
+
 .button1, .button2 {
 	padding-top: 9px;
 }
-
 
 .function2 .picture {
 	display: block;
 	order: 1;
 }
+
+.prices .tag {
+	left: 1px;
+}
+
+.prices .tag-popular {
+	left: 7px;
+}
+
 .terms {
 	margin-top: 1px;
     float: right;
